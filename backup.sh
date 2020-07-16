@@ -1,8 +1,6 @@
 #!/bin/bash
 
-our_files=$(ls /home/volodymyr/backup/)
-
-for var in $our_files
+for var in $(ls /home/volodymyr/backup/)
 do
 if [ -e /home/volodymyr/$var ]
 then
